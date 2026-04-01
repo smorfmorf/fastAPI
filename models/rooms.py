@@ -1,10 +1,10 @@
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import ForeignKey
 
-from databese import Base_ORM
+from databese import BaseORM
 
 
-class RoomsOrm(Base_ORM):
+class RoomsOrm(BaseORM):
     __tablename__ = "rooms"
 
     id: Mapped[int] = mapped_column(primary_key=True)
