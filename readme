@@ -1,0 +1,15 @@
+python -m alembic init alembic 
+
+alembic init alembic
+
+Создание первой миграции
+alembic revision --autogenerate -m "init"
+
+Применение миграций
+
+
+
+
+Next завершить
+python(fastapi) 
+golang по немногу
