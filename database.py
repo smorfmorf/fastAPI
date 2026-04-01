@@ -15,7 +15,6 @@ class BaseORM(DeclarativeBase):
     pass
 
 engine = create_async_engine("postgresql+asyncpg://postgres:max001195164@localhost:5432/8H", echo=True)  # logging SQL запросов
-
 async_session_maker = async_sessionmaker(bind=engine, expire_on_commit=False) # - тоже для работы с БД, но в рамках транзакции
 
 
